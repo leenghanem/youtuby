@@ -1,0 +1,199 @@
+body {
+    font-family:  Arial, sans-serif;
+    background-color: #fafafa;
+}
+a {
+    color:#000;
+    text-decoration: none !important;
+}
+ 
+button {
+    background-color: plum!important;
+    color: purple !important;
+    border-color: purple !important;
+}
+
+button:hover {
+    color: #fff !important;
+    background-color: purple !important;
+}
+
+.card-body {
+    min-width: 0;
+}
+.card .card-horizontal .card-body p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ 
+#top-menu .bg-light {
+    background-color:rgb(224, 195, 224) !important;
+}
+
+#top-menu .video-icon {
+    background-color: purple;
+    color: plum;
+    border-radius: 15%;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link {
+    color:plum;
+    background-color: purple;
+}
+
+.navbar .login {
+    background-color: transparent !important;
+    color:purple !important;
+    border-color: purple !important;
+}
+
+.modal .modal-header .close:hover {
+    color: purple!important;
+    background-color: transparent !important;
+}
+
+input.form-control:focus,
+button:focus {
+    box-shadow: none !important;
+}
+.card .card-icons {
+    position: relative;
+}
+
+time {
+    position: absolute;
+    top: 43%;
+    left: 7px;
+    color:plum;
+    background-color:purple;
+    padding: 0px 3px;
+}
+
+.card .fa-play {
+    position: absolute;
+    top: 25%;
+    right: 45%;
+    color:purple;
+    display: none;
+}
+.card:hover .fa-play {
+    display: inline;
+}
+.card:hover {
+    transform: translateY(-.9%);
+}
+.card {
+    transition: transform .5s;
+}
+.card .card-title {
+    height: 50px;
+    overflow: hidden;
+}
+#top-menu .fa-bars {
+    cursor: pointer;
+}
+
+.sidebar{
+    position: fixed;
+    z-index: 3;
+    left: -17rem;
+    transition: all .5s ease-in-out;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.sidebar:hover {
+    overflow: scroll;
+}
+
+.sidebar .purple {
+    color:purple;
+}
+
+.sidebar .list-group-item:hover {
+    color:rgb(224, 195, 224);
+    background-color: purple;
+}
+
+.sidebar .list-group-item:hover .purple {
+    color:#fff;
+}
+
+.sidebar .list-group-item {
+    width: 17rem;
+}
+
+#wrap.toggled .sidebar {
+    left: 0rem;
+}
+
+.sidebar::-webkit-scrollbar {
+    background:  rgb(230,230,230);
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: rgb(179,179,179);
+    width:8px;
+}
+
+.layer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+}
+.navbar .search-icon {
+    color: purple;
+    cursor: pointer;
+    padding: 15px 10px;
+    position: absolute;
+    top: 15px;
+    left: 132px;
+    display: none;
+}
+.navbar .search-icon:hover {
+    color: plum;
+    background-color: purple;
+}
+
+.search-input {
+    position: fixed;
+    top: 72px;
+    border: none;
+    padding: 6px 23px;
+    height: 60px;
+    background-color: #efeeee;
+    display: none;
+    z-index: 1;
+}
+.search-input:focus {
+    background-color: #efeeee;
+}
+
+.container-fluid {
+    padding: 0px;
+    overflow: hidden;
+}
+@media (max-width: 1115px) {
+
+    .navbar .collapse .form-inline {
+        display: none;
+    }
+
+    .navbar .search-icon {
+        display: inline;
+    }
+}
+
+@media (min-width: 1115px) {
+    .search-input {
+        display: none !important;
+    }
+}
